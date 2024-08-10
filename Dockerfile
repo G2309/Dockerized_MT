@@ -16,7 +16,7 @@ RUN apk add --no-cache build-base libstdc++ linux-headers musl-dev libgcc g++ li
 COPY . .
 
 # Compila main.cpp en un ejecutable llamado 'code'
-# Para utilizar paralezicacion debes completar el comando de abajo, si usas openmp utiliza una flag "-fopenmp" y si utilizas pthreads: "-pthread"
+# Para utilizar paralelizacion debes completar el comando de abajo, si usas openmp utiliza una flag "-fopenmp" y si utilizas pthreads: "-pthread"
 RUN g++ -o code main.cpp
 
 # Define el comando por defecto que ejecuta el programa compilado
